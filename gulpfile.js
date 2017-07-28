@@ -28,7 +28,7 @@ gulp.task('compile:ts', function(){
 
 // HTMLをsrcからdistにコピー
 gulp.task('copy:html', function(){
-  return gulp.src(['src/*.html']) 
+  return gulp.src(['src/*.html', 'src/*.css']) 
     .pipe(gulp.dest('dist/'));
 });
 
@@ -57,6 +57,7 @@ gulp.task('server', function(){
 gulp.task('watch', function(){
   gulp.watch([
     'src/ts/*.ts',
-    'src/*.html'
+    'src/*.html',
+    'src/*.css'
   ], ['compile:ts','copy:html']); 
 });
