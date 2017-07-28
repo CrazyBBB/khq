@@ -1,0 +1,17 @@
+{
+  "name": "khq",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "CrazyBBB <myamamtist@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CrazyBBB/khq",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
